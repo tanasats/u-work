@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
 import Container from "@/components/Container";
+import {Sarabun} from "next/font/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,6 +16,14 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const sarabun = Sarabun({
+  weight: '400',
+  subsets: ['thai','latin'],
+  display: 'swap',
+  variable: "--font-sarabun",
+})
+ 
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,7 +37,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+      {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} > */}
+      <body className={`${sarabun.variable} ${geistSans.variable} ${geistMono.variable} antialiased`} >
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
