@@ -1,0 +1,44 @@
+###
+GET http://localhost:3000/api/auth HTTP/1.1
+###
+GET http://localhost:3000/api/test HTTP/1.1
+###
+GET http://localhost:3000/api/tstest HTTP/1.1
+###
+GET http://localhost:3000/api/users/1 HTTP/1.1
+###
+POST http://localhost:3000/api/users/1 HTTP/1.1
+content-type: application/json
+
+{
+    "username":"tanasat",
+    "password":"sudjing",
+    "email":"xxxx@msu.ac.th"
+}
+
+###
+POST http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "username":"kanokwan",
+    "uid":"kanokwan@msu.ac.th",
+    "utype":"student",
+    "name": "tanasat sudjing"
+}  
+
+###
+POST https://data.msu.ac.th/api/v1.1/auth/signin HTTP/1.1
+Authorization: Basic tanasat.s@msu.ac.th:sudjing
+content-type: application/json
+
+{
+    "username":"tanasat",
+    "password":"tanasat71521150"
+}  
+
+###
+GET https://data.msu.ac.th/api/v1.1/auth/me HTTP/1.1
+Authorization: Basic tanasat.s@msu.ac.th:sudjing
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbmFzYXQiLCJpYXQiOjE3MjcyNzE2MTMsImV4cCI6MTcyNzI3NTIxMywiaXNzIjoidGFuYXNhdC5zQG1zdS5hYy50aCJ9._L7pYQ3lsXbWoVQ5kFIsbwvN1QSolYpEpNFAqnVSo4E
+content-type: application/json
