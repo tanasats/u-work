@@ -1,14 +1,6 @@
-export const dynamic = 'force-static'
- 
-export async function GET(request,{params}) {
-//   const res = await fetch('https://data.mongodb-api.com/...', {
-//     headers: {
-//       'Content-Type': 'application/json',
-//       'API-Key': process.env.DATA_API_KEY,
-//     },
-//   })
-  
-//   const data = await res.json()
-console.log("test api")
-  return Response.json({"status":"ok"})
+export async function GET(req,res){
+  console.log("res:",res)
+  return Response.json({
+    message: "test GET response"
+  })
 }

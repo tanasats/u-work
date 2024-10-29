@@ -5,10 +5,9 @@ import { ThemeToggler } from './ThemeToggler'
 
 function Header() {
     const navigation = [
-        { title: "Doc", href: "/docs" },
-        { title: "Component", href: "/component" },
-        { title: "Block", href: "/block" },
-        { title: "Signin", href: "/signin"}
+        { title: "Dashboard", href: "/dashboard" },
+        { title: "Settings", href: "/dashboard/setting" },     
+        { title: "Logout", href: "/logout"}
     ]
     return (
         <header className="dark:text-gray-300 border-b-[1px] border-black/10 dark:border-b-white/20">

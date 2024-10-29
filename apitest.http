@@ -42,3 +42,7 @@ GET https://data.msu.ac.th/api/v1.1/auth/me HTTP/1.1
 Authorization: Basic tanasat.s@msu.ac.th:sudjing
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbmFzYXQiLCJpYXQiOjE3MjcyNzE2MTMsImV4cCI6MTcyNzI3NTIxMywiaXNzIjoidGFuYXNhdC5zQG1zdS5hYy50aCJ9._L7pYQ3lsXbWoVQ5kFIsbwvN1QSolYpEpNFAqnVSo4E
 content-type: application/json
+
+
+
+
